@@ -4,7 +4,20 @@ transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
-{
+{ 
+	let sueldo;
+	let porcentaje;
+	let resultado;
 
-	alert("ok");
+	sueldo = txtIdSueldo.value;
+
+	sueldo = parseInt(sueldo);
+
+	porcentaje = sueldo * 0.10;
+
+	resultado = porcentaje + sueldo;
+
+    txtIdResultado.value = resultado;
+
+	
 }
